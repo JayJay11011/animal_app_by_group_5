@@ -6,53 +6,53 @@ class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          const Expanded(flex: 2, child: _TopPortion()),
-          Expanded(
-            flex: 3,
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Column(
-                children: [
-                  Text(
-                    "Richie Lorie",
-                    style: Theme.of(context)
-                        .textTheme
-                        .headline6
-                        ?.copyWith(fontWeight: FontWeight.bold),
-                  ),
-                  const SizedBox(height: 16),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      FloatingActionButton.extended(
-                        onPressed: () {},
-                        heroTag: 'follow',
-                        elevation: 0,
-                        label: const Text("Follow"),
-                        icon: const Icon(Icons.person_add_alt_1),
-                      ),
-                      const SizedBox(width: 16.0),
-                      FloatingActionButton.extended(
-                        onPressed: () {},
-                        heroTag: 'mesage',
-                        elevation: 0,
-                        backgroundColor: Colors.red,
-                        label: const Text("Message"),
-                        icon: const Icon(Icons.message_rounded),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 16),
-                  const _ProfileInfoRow()
-                ],
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
+        // body: Column(
+        //   children: [
+        //     const Expanded(flex: 2, child: _TopPortion()),
+        //     Expanded(
+        //       flex: 3,
+        //       child: Padding(
+        //         padding: const EdgeInsets.all(8.0),
+        //         child: Column(
+        //           children: [
+        //             Text(
+        //               "Richie Lorie",
+        //               style: Theme.of(context)
+        //                   .textTheme
+        //                   .headline6
+        //                   ?.copyWith(fontWeight: FontWeight.bold),
+        //             ),
+        //             const SizedBox(height: 16),
+        //             Row(
+        //               mainAxisAlignment: MainAxisAlignment.center,
+        //               children: [
+        //                 FloatingActionButton.extended(
+        //                   onPressed: () {},
+        //                   heroTag: 'follow',
+        //                   elevation: 0,
+        //                   label: const Text("Follow"),
+        //                   icon: const Icon(Icons.person_add_alt_1),
+        //                 ),
+        //                 const SizedBox(width: 16.0),
+        //                 FloatingActionButton.extended(
+        //                   onPressed: () {},
+        //                   heroTag: 'mesage',
+        //                   elevation: 0,
+        //                   backgroundColor: Colors.red,
+        //                   label: const Text("Message"),
+        //                   icon: const Icon(Icons.message_rounded),
+        //                 ),
+        //               ],
+        //             ),
+        //             const SizedBox(height: 16),
+        //             const _ProfileInfoRow()
+        //           ],
+        //         ),
+        //       ),
+        //     ),
+        //   ],
+        // ),
+        );
   }
 }
 
@@ -126,7 +126,10 @@ class _TopPortion extends StatelessWidget {
               gradient: LinearGradient(
                   begin: Alignment.bottomCenter,
                   end: Alignment.topCenter,
-                  colors: [Color.fromARGB(255, 255, 155, 55), Color.fromARGB(255, 255, 111, 75)]),
+                  colors: [
+                    Color.fromARGB(255, 255, 155, 55),
+                    Color.fromARGB(255, 255, 111, 75)
+                  ]),
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(50),
                 bottomRight: Radius.circular(50),

@@ -1,12 +1,12 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import '../pages/contents_page.dart';
+import '../pages/favorite_page.dart';
 import '../pages/home_page.dart';
-import '../pages/profile_page.dart';
+import '../pages/history_page.dart';
 import '../pages/second_page.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
-import '../pages/settings_page.dart';
+import '../pages/keyword_page.dart';
 
 class NavigationBarApp extends StatelessWidget {
   const NavigationBarApp({super.key});
@@ -79,7 +79,7 @@ class _NavigationExampleState extends State<NavigationExample> {
         ],
       ),
       body: <Widget>[
-        const MyHomePage(title: "HomePage"),
+        const MyHomePage(title: "ໜ້າຫຼັກ"),
         const ContentsPage(),
         const ProfilePage(),
         const SettingsPage(),

@@ -45,48 +45,47 @@ class _MyHomePageState extends State<MyHomePage> {
           title: Text(widget.title),
         ),
         body: Center(
-          // Center is a layout widget. It takes a single child and positions it
-          // in the middle of the parent.
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              const Text(
-                'ຈຳນວນ',
-                style: TextStyle(fontSize: 20, fontFamily: 'NotoSansLao' ),
-              ),
-              Text(
-                '$_counter',
-                style: const TextStyle(fontSize: 50, color: Colors.orange),
-              ),
-              Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: <Widget>[
-                    CustomButton(
-                      btnFunc: _incrementCounter,
-                      btnColor: Colors.green,
-                      btnText: "ເພີ່ມຄ່າ",
-                    ),
-                    CustomButton(
-                      btnFunc: _disincrementCounter,
-                      btnColor: Colors.red,
-                      btnText: "ລົບຄ່າ",
-                    ),
-                    CustomButton(
-                      btnFunc: _resetCounter,
-                      btnColor: Colors.blue,
-                      btnText: "ຄືນຄ່າ",
-                    ),
-                  ]),
-              CustomButton(
-                btnFunc: _goToSecondPage,
-                btnColor: Colors.cyan,
-                btnText: "Go to second page",
-              )
-            ],
-          ),
-        ),
+            // Center is a layout widget. It takes a single child and positions it
+            // in the middle of the parent.
+            // child: Column(
+            //   mainAxisAlignment: MainAxisAlignment.center,
+            //   children: <Widget>[
+            //     const Text(
+            //       'ຈຳນວນ',
+            //       style: TextStyle(fontSize: 20, fontFamily: 'NotoSansLao' ),
+            //     ),
+            //     Text(
+            //       '$_counter',
+            //       style: const TextStyle(fontSize: 50, color: Colors.orange),
+            //     ),
+            //     Row(
+            //         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            //         children: <Widget>[
+            //           CustomButton(
+            //             btnFunc: _incrementCounter,
+            //             btnColor: Colors.green,
+            //             btnText: "ເພີ່ມຄ່າ",
+            //           ),
+            //           CustomButton(
+            //             btnFunc: _disincrementCounter,
+            //             btnColor: Colors.red,
+            //             btnText: "ລົບຄ່າ",
+            //           ),
+            //           CustomButton(
+            //             btnFunc: _resetCounter,
+            //             btnColor: Colors.blue,
+            //             btnText: "ຄືນຄ່າ",
+            //           ),
+            //         ]),
+            //     CustomButton(
+            //       btnFunc: _goToSecondPage,
+            //       btnColor: Colors.cyan,
+            //       btnText: "Go to second page",
+            //     )
+            //   ],
+            // ),
+            ),
       ),
     );
   }
-
 }
